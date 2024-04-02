@@ -20,11 +20,11 @@ import java.util.Optional;
 @RequestMapping("/api")
 public class AccountController {
     private final AccountService accountService;
-    @Autowired
-    private AccountRepo accountRepo;
+    private final AccountRepo accountRepo;
 
     public AccountController(AccountService accountService, AccountRepo accountRepo) {
         this.accountService = accountService;
+        this.accountRepo=accountRepo;
     }
 
     //Get All Account Information

@@ -12,7 +12,7 @@ public interface AccountService {
     public Account addAccount(Account account);
     //GetAll Account
     public List<Account> getAllAccounts();
-    //get Single Account by Id
+    //get Single Account by id
     public ResponseEntity<?> getSingleAccount(int id);
     //Deposit into Account Balance
     public ResponseEntity<?>deposit(int id,double balance);

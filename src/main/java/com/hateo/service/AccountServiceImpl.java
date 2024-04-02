@@ -28,7 +28,7 @@ public class AccountServiceImpl implements AccountService{
         return accountRepo.findAll();
 
     }
-    //get Single Account by Id
+    //get Single Account by id
     public ResponseEntity<?> getSingleAccount(int id){
         Optional<Account> byId = accountRepo.findById(id);
         if (byId.isEmpty()){
@@ -61,6 +61,7 @@ public class AccountServiceImpl implements AccountService{
         }
         else {
             Account account = byId.get();
+            //Checking if withdrawal balance is greater than the total balance available
             if (bal>account.getBalance()){
               throw new CustomException("Low Balance");
             }
