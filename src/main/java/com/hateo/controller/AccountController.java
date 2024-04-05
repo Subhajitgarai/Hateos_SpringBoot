@@ -3,7 +3,6 @@ package com.hateo.controller;
 import com.hateo.entity.Account;
 import com.hateo.repository.AccountRepo;
 import com.hateo.service.AccountService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.query.Param;
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
@@ -98,6 +97,7 @@ public class AccountController {
         return addedAcc;
     }
 
+
     //Deposit
     @PatchMapping("accounts/{id}/deposit")
     public ResponseEntity<?> depositAmount(@PathVariable int id, @Param("balance") double balance) {
@@ -118,7 +118,7 @@ public class AccountController {
 
     @GetMapping("/test")
     public String test() {
-        return "Hi Test !";
+        return "Hello Test !";
     }
 
 
