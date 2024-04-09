@@ -17,7 +17,7 @@ spec:
           image: royalsubha/springboottrial:3.0
           ports:
             - containerPort: 8080
-          env:   # Setting Enviornmental Variables
+          env:   # Setting Environmental Variables
             - name: MYSQL_HOST   # Setting Database host address
               value: mysql
 
