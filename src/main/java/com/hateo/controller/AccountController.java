@@ -116,7 +116,7 @@ public class AccountController {
         return accountService.deleteAccount(id);
     }
 
-    @GetMapping("/test")
+    @GetMapping("/test1")
     public String test() {
         return "Hello Test !";
     }

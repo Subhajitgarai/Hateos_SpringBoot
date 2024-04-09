@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: springboot-crud-k8s
-          image: royalsubha/springboottrial:3.0
+          image: royalsubha/springboottrial:latest
           ports:
             - containerPort: 8080
           env:   # Setting Environmental Variables
