@@ -120,6 +120,10 @@ public class AccountController {
     public String test() {
         return "Hello Test !";
     }
+    @GetMapping("/jenkins")
+    public String jenkinsTest(){
+        return "Congratulations you have deployed your project to kubernetes via Jenkins !!";
+    }
 
 
 }
