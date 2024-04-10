@@ -23,7 +23,7 @@ public class AccountController {
 
     public AccountController(AccountService accountService, AccountRepo accountRepo) {
         this.accountService = accountService;
-        this.accountRepo=accountRepo;
+        this.accountRepo = accountRepo;
     }
 
     //Get All Account Information
@@ -120,8 +120,9 @@ public class AccountController {
     public String test() {
         return "Hello Test !";
     }
+
     @GetMapping("/jenkins")
-    public String jenkinsTest(){
+    public String jenkinsTest() {
         return "Congratulation from jenkins 3,2,1!!";
     }
 
