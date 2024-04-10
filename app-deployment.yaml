@@ -44,4 +44,5 @@ spec:
     - protocol: "TCP"
       port: 8080 # The port that the service is running on in the cluster
       targetPort: 8080 # The port exposed by the service
+      nodePort: 30000
   type: NodePort # type of the service.
