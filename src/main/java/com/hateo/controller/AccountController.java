@@ -123,7 +123,7 @@ public class AccountController {
 
     @GetMapping("/jenkins")
     public String jenkinsTest() {
-        return "Congratulation from jenkins 3,2,1!!";
+        return "Congratulation from jenkins 1,2,3!!";
     }
 
 
